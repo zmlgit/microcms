@@ -10,7 +10,7 @@ class UserEntityTest {
 
     @Before
     fun before() {
-        userEntity = UserEntity.builder().email("zml").build()
+        userEntity = UserEntity()
     }
 
     @Test
