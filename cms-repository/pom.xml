@@ -16,6 +16,15 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons-core</artifactId>
+            <version>1.4.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.zmlio.microcms</groupId>
+            <artifactId>cms-domain</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
