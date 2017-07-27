@@ -2,12 +2,14 @@ package cn.zmlio.microcms.repository.impl
 
 import cn.zmlio.microcms.domains.Principal
 import cn.zmlio.microcms.repository.PrincipalRepository
+import cn.zmlio.microcms.repository.dao.UserDao
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
 import org.springframework.stereotype.Repository
 
 @Repository
-class PrincipalRepositoryImpl : PrincipalRepository {
+class PrincipalRepositoryImpl(userDao: UserDao) : PrincipalRepository, UserDao by userDao {
+
     override fun newPrincipal(): Principal {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }

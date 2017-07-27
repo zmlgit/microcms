@@ -1,6 +1,7 @@
 package cn.zmlio.microcms.entity;
 
 import lombok.ToString;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -9,6 +10,7 @@ import java.util.Date;
 @MappedSuperclass
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @ToString
+@Where(clause = "is_deleted = 0")
 public class BasicEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
